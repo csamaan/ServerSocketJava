@@ -25,7 +25,6 @@ public class Main {
         //doOperation("Flip (from Read to Write): ", buffer, ByteBuffer::flip);
         doOperation("Append: ", buffer, b -> b.put(" *******".getBytes()));
         doOperation("Read and Print Value: ", buffer.slice(0, buffer.position()), printBuffer);
-
     }
 
     private static void doOperation(String op, ByteBuffer buffer, Consumer<ByteBuffer> c) {
