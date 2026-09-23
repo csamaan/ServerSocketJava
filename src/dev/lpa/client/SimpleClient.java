@@ -1,4 +1,4 @@
-package dev.lpa.server;
+package dev.lpa.client;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class SimpleClient {
     public static void main(String[] args) {
-        try (Socket socket = new Socket("localhost", 5001);
+        try (Socket socket = new Socket("localhost", 5000);
              BufferedReader input = new BufferedReader(
                      new InputStreamReader(socket.getInputStream()));
              PrintWriter output = new PrintWriter(socket.getOutputStream(), true);
