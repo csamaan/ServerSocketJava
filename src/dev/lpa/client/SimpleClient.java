@@ -17,7 +17,6 @@ public class SimpleClient {
 
             String requestString;
             String responseString;
-
             do {
                 System.out.println("Enter a string to be echoed (type \"exit\" to quit): ");
                 requestString = scanner.nextLine();
